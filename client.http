@@ -10,7 +10,15 @@ Content-Type: application/json
 
 # @name get_products
 
-GET {{baseUrl}}/products?
+GET {{baseUrl}}/products
+Content-Type: application/json
+
+
+####
+
+# @name get_product_by_id
+
+GET {{baseUrl}}/products/083cbe8a-90cc-4167-814f-37aa4be7209a
 Content-Type: application/json
 
 

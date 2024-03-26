@@ -4,6 +4,7 @@ import { FindAllProductUseCase } from '@/domain/products/application/useCases/Fi
 import { FindProductByIdUseCase } from '@/domain/products/application/useCases/FindProductById'
 import { FindProductByCategoryUseCase } from '@/domain/products/application/useCases/FindProductsByCategoryUseCase'
 import { FindAllProductsController } from './controllers/FindAllProducts.controller'
+import { FindProductByIdController } from './controllers/FindProductById.controller'
 
 @Module({
   imports: [DatabaseModule],
@@ -12,6 +13,6 @@ import { FindAllProductsController } from './controllers/FindAllProducts.control
     FindProductByIdUseCase,
     FindProductByCategoryUseCase,
   ],
-  controllers: [FindAllProductsController],
+  controllers: [FindAllProductsController, FindProductByIdController],
 })
 export class HttpModule {}
