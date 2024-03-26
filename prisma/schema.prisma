@@ -13,6 +13,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Category {
+  MUG
+  TSHIRT
+}
+
 model Product {
-  id String @id @default(uuid())
+  id       String   @id @default(uuid())
+  name     String   @unique
+  price    Int
+  image    String
+  category Category
 }

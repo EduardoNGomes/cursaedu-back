@@ -4,7 +4,7 @@
   "description": "",
   "author": "",
   "private": true,
-  "license": "UNLICENSED",  
+  "license": "UNLICENSED",
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
   },
@@ -26,6 +26,7 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/serve-static": "^4.0.1",
     "@prisma/client": "5.11.0",
     "prisma": "^5.11.0",
     "reflect-metadata": "^0.1.13",
