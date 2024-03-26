@@ -11,6 +11,7 @@ type findProductByIdInterface = {
 
 type findProductsByCategoryInterface = {
   category: string
+  page: number
 }
 
 export abstract class IProductRepository {
