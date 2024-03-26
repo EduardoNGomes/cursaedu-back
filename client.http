@@ -24,3 +24,11 @@ Content-Type: application/json
 
 ####
 
+# @name get_products_by_category
+
+GET {{baseUrl}}/category?category=tshirt
+Content-Type: application/json
+
+
+####
+

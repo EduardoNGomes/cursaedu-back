@@ -15,7 +15,7 @@ type FindProductByCategoryUseCaseResponse =
     }
   | InvalidCategoryError
 @Injectable()
-export class FindProductByCategoryUseCase {
+export class FindProductsByCategoryUseCase {
   constructor(private productRepositry: IProductRepository) {}
 
   async execute({
@@ -31,7 +31,7 @@ export class FindProductByCategoryUseCase {
 
     const { totalCount, products } =
       await this.productRepositry.findProductsByCategory({
-        category,
+        category: category.toUpperCase(),
         page,
       })
 
