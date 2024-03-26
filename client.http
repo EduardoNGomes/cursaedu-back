@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:3000
+
+# @name get_image
+
+GET {{baseUrl}}/camiseta-01.jpg
+Content-Type: application/json
+
+
+####
+
