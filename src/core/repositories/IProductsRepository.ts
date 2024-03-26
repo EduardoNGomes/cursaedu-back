@@ -1,19 +1,20 @@
-import { Product } from "@prisma/client";
+import { Product } from '@prisma/client'
 
-type findAllProductInterface = {
-  name?:string
+type findAllProductsInterface = {
+  name?: string
   page: number
 }
 
-type findProductByCategoryInterface = {
+type findProductsByCategoryInterface = {
   category: string
 }
 
 export abstract class IProductRepository {
-  abstract findAll(props:findAllProductInterface):Promise<Product[]>
+  abstract findAllProducts(props: findAllProductsInterface): Promise<Product[]>
 
-  abstract findProductById():Promise<Product>
+  abstract findProductById(): Promise<Product>
 
-  abstract findProductByCategory(props:findProductByCategoryInterface):Promise<Product[]>
-
+  abstract findProductsByCategory(
+    props: findProductsByCategoryInterface,
+  ): Promise<Product[]>
 }
