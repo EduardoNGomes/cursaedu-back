@@ -8,3 +8,11 @@ Content-Type: application/json
 
 ####
 
+# @name get_products
+
+GET {{baseUrl}}/products?
+Content-Type: application/json
+
+
+####
+

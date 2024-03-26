@@ -3,6 +3,7 @@ import { DatabaseModule } from '../database/database.module'
 import { FindAllProductUseCase } from '@/domain/products/application/useCases/FindAllProductsUseCase'
 import { FindProductByIdUseCase } from '@/domain/products/application/useCases/FindProductById'
 import { FindProductByCategoryUseCase } from '@/domain/products/application/useCases/FindProductsByCategoryUseCase'
+import { FindAllProductsController } from './controllers/FindAllProducts.controller'
 
 @Module({
   imports: [DatabaseModule],
@@ -11,6 +12,6 @@ import { FindProductByCategoryUseCase } from '@/domain/products/application/useC
     FindProductByIdUseCase,
     FindProductByCategoryUseCase,
   ],
-  controllers: [],
+  controllers: [FindAllProductsController],
 })
 export class HttpModule {}
