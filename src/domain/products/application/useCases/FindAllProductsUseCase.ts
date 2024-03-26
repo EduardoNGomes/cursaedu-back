@@ -1,5 +1,5 @@
+import { IProductRepository } from '@/core/repositories/IProductsRepository'
 import { Product } from '@prisma/client'
-import { IProductRepository } from 'src/core/repositories/IProductsRepository'
 
 type FindAllProductUseCaseRequest = {
   name?: string

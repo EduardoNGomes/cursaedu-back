@@ -1,6 +1,6 @@
 import { Product } from '@prisma/client'
-import { IProductRepository } from 'src/core/repositories/IProductsRepository'
 import { ProductNotFoundError } from '../errors/ProductNotFoundError'
+import { IProductRepository } from '@/core/repositories/IProductsRepository'
 
 type FindProductByIdUseCaseRequest = {
   id: string

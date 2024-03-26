@@ -1,4 +1,4 @@
-import { UseCaseError } from 'src/core/error/IUseCaseError'
+import { UseCaseError } from '@/core/error/IUseCaseError'
 
 export class ProductNotFoundError extends Error implements UseCaseError {
   constructor() {
