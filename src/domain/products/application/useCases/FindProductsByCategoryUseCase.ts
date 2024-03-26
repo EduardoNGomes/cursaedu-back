@@ -10,6 +10,7 @@ type FindProductByCategoryUseCaseRequest = {
 
 type FindProductByCategoryUseCaseResponse =
   | {
+      totalCount: number
       products: Product[]
     }
   | InvalidCategoryError
@@ -21,15 +22,19 @@ export class FindProductByCategoryUseCase {
     category,
     page,
   }: FindProductByCategoryUseCaseRequest): Promise<FindProductByCategoryUseCaseResponse> {
-    if (category !== 'MUG' && category !== 'TSHIRT') {
+    if (
+      category.toLocaleUpperCase() !== 'MUG' &&
+      category.toUpperCase() !== 'TSHIRT'
+    ) {
       return new InvalidCategoryError(category)
     }
 
-    const products = await this.productRepositry.findProductsByCategory({
-      category,
-      page,
-    })
+    const { totalCount, products } =
+      await this.productRepositry.findProductsByCategory({
+        category,
+        page,
+      })
 
-    return { products }
+    return { totalCount, products }
   }
 }

@@ -8,6 +8,7 @@ type FindAllProductUseCaseRequest = {
 }
 
 type FindAllProductUseCaseResponse = {
+  totalCount: number
   products: Product[]
 }
 
@@ -19,8 +20,9 @@ export class FindAllProductUseCase {
     page,
     name,
   }: FindAllProductUseCaseRequest): Promise<FindAllProductUseCaseResponse> {
-    const products = await this.productRepositry.findAllProducts({ page, name })
+    const { totalCount, products } =
+      await this.productRepositry.findAllProducts({ page, name })
 
-    return { products }
+    return { totalCount, products }
   }
 }
