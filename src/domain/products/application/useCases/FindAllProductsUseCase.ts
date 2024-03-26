@@ -17,7 +17,7 @@ export class FindAllProductUseCase {
     page,
     name,
   }: FindAllProductUseCaseRequest): Promise<FindAllProductUseCaseResponse> {
-    const products = await this.productRepositry.findAll({ page, name })
+    const products = await this.productRepositry.findAllProducts({ page, name })
 
     return { products }
   }

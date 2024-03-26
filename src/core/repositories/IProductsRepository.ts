@@ -5,6 +5,10 @@ type findAllProductsInterface = {
   page: number
 }
 
+type findProductByIdInterface = {
+  id: string
+}
+
 type findProductsByCategoryInterface = {
   category: string
 }
@@ -12,7 +16,9 @@ type findProductsByCategoryInterface = {
 export abstract class IProductRepository {
   abstract findAllProducts(props: findAllProductsInterface): Promise<Product[]>
 
-  abstract findProductById(): Promise<Product>
+  abstract findProductById(
+    props: findProductByIdInterface,
+  ): Promise<Product | null>
 
   abstract findProductsByCategory(
     props: findProductsByCategoryInterface,
