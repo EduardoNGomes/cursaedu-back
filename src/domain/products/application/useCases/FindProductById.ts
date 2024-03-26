@@ -1,6 +1,7 @@
 import { Product } from '@prisma/client'
 import { ProductNotFoundError } from '../errors/ProductNotFoundError'
 import { IProductRepository } from '@/core/repositories/IProductsRepository'
+import { Injectable } from '@nestjs/common'
 
 type FindProductByIdUseCaseRequest = {
   id: string
@@ -12,6 +13,7 @@ type FindProductByIdUseCaseResponse =
     }
   | ProductNotFoundError
 
+@Injectable()
 export class FindProductByIdUseCase {
   constructor(private productRepositry: IProductRepository) {}
 

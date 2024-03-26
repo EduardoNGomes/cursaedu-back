@@ -1,4 +1,5 @@
 import { IProductRepository } from '@/core/repositories/IProductsRepository'
+import { Injectable } from '@nestjs/common'
 import { Product } from '@prisma/client'
 
 type FindAllProductUseCaseRequest = {
@@ -10,6 +11,7 @@ type FindAllProductUseCaseResponse = {
   products: Product[]
 }
 
+@Injectable()
 export class FindAllProductUseCase {
   constructor(private productRepositry: IProductRepository) {}
 

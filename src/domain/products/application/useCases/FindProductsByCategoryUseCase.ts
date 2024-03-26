@@ -1,6 +1,7 @@
 import { IProductRepository } from '@/core/repositories/IProductsRepository'
 import { Product } from '@prisma/client'
 import { InvalidCategoryError } from '../errors/InvalidCategoryError'
+import { Injectable } from '@nestjs/common'
 
 type FindProductByCategoryUseCaseRequest = {
   category: string
@@ -12,7 +13,7 @@ type FindProductByCategoryUseCaseResponse =
       products: Product[]
     }
   | InvalidCategoryError
-
+@Injectable()
 export class FindProductByCategoryUseCase {
   constructor(private productRepositry: IProductRepository) {}
 
