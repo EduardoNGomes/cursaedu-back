@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:3000
+@baseUrl = http://localhost:8080
 
 # @name get_image
 
@@ -10,7 +10,7 @@ Content-Type: application/json
 
 # @name get_products
 
-GET {{baseUrl}}/products
+GET {{baseUrl}}/?name=cane
 Content-Type: application/json
 
 
@@ -18,7 +18,7 @@ Content-Type: application/json
 
 # @name get_product_by_id
 
-GET {{baseUrl}}/products/083cbe8a-90cc-4167-814f-37aa4be7209a
+GET {{baseUrl}}/product/083cbe8a-90cc-4167-814f-37aa4be7209a
 Content-Type: application/json
 
 
@@ -26,7 +26,7 @@ Content-Type: application/json
 
 # @name get_products_by_category
 
-GET {{baseUrl}}/category?category=tshirt
+GET {{baseUrl}}/category/tshirt?page=2
 Content-Type: application/json
 
 

@@ -10,7 +10,7 @@ const findAllProductsParamsSchema = z.object({
 
 type FindAllProductsParamsSchema = z.infer<typeof findAllProductsParamsSchema>
 
-@Controller('/products')
+@Controller('/')
 export class FindAllProductsController {
   constructor(private findAllProducts: FindAllProductUseCase) {}
 

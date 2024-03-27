@@ -17,7 +17,7 @@ const findProductByIdParamsSchema = z.object({
 
 type FindProductByIdParamsSchema = z.infer<typeof findProductByIdParamsSchema>
 
-@Controller('/products/:id')
+@Controller('/product/:id')
 export class FindProductByIdController {
   constructor(private findProductById: FindProductByIdUseCase) {}
 

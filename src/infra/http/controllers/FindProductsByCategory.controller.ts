@@ -3,8 +3,8 @@ import {
   Controller,
   Get,
   HttpCode,
+  Param,
   Query,
-  UsePipes,
 } from '@nestjs/common'
 import { z } from 'zod'
 import { ZodValidationPipe } from '../pipe/ZodValidation'
@@ -13,22 +13,41 @@ import { InvalidCategoryError } from '@/domain/products/application/errors/Inval
 
 const findProductsByCategoryParamsSchema = z.object({
   category: z.string().optional(),
-  page: z.coerce.number().optional(),
 })
 
 type FindProductsByCategoryParamsSchema = z.infer<
   typeof findProductsByCategoryParamsSchema
 >
 
-@Controller('/category')
+const findProductsByCategoryQuerySchema = z.object({
+  page: z.coerce.number().optional(),
+})
+
+type FindProductsByCategoryQuerySchema = z.infer<
+  typeof findProductsByCategoryQuerySchema
+>
+
+const paramValidationPipe = new ZodValidationPipe(
+  findProductsByCategoryParamsSchema,
+)
+const queryValidationPipe = new ZodValidationPipe(
+  findProductsByCategoryQuerySchema,
+)
+@Controller('/category/:category')
 export class FindProductsByCategoryController {
   constructor(private findProductsByCategory: FindProductsByCategoryUseCase) {}
 
   @HttpCode(200)
   @Get()
-  @UsePipes(new ZodValidationPipe(findProductsByCategoryParamsSchema))
-  async handle(@Query() query: FindProductsByCategoryParamsSchema) {
-    const { page, category } = query
+  async handle(
+    @Param(paramValidationPipe) param: FindProductsByCategoryParamsSchema,
+    @Query(queryValidationPipe) query: FindProductsByCategoryQuerySchema,
+  ) {
+    const { category } = param
+
+    const { page } = query
+
+    console.log(page)
 
     const result = await this.findProductsByCategory.execute({
       page: page ?? 1,
