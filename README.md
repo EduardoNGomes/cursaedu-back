@@ -1,7 +1,3 @@
-<p align="center">
-  <img alt="Logo capputeeno" src=".github/logo.png" width="200px" />
-</p>
-
 <h1 align="center"> Desafio Fullstack - Capputeeno </h1>
 
 Nesse repositório contém a implementação de um sistema de E-commerce projetado para venda de produtos digitais. A aplicação possui várias funcionalidades, incluindo busca, filtro, paginação em um catálogo de produtos e gerenciamento do carrinho de compras.
@@ -11,7 +7,7 @@ Nesse repositório contém a implementação de um sistema de E-commerce projeta
 1. Clone o projeto:
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/EduardoNGomes/cursaedu-back
 ```
 
 2. Entre no diretório do projeto e instale as dependências:
