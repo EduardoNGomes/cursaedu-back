@@ -1,73 +1,62 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <img alt="Logo capputeeno" src=".github/logo.png" width="200px" />
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<h1 align="center"> Desafio Fullstack - Capputeeno </h1>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Nesse repositório contém a implementação de um sistema de E-commerce projetado para venda de produtos digitais. A aplicação possui várias funcionalidades, incluindo busca, filtro, paginação em um catálogo de produtos e gerenciamento do carrinho de compras.
 
-## Description
+## 🔧 Rodando localmente
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+1. Clone o projeto:
 
 ```bash
-$ pnpm install
+  git clone https://link-para-o-projeto
 ```
 
-## Running the app
+2. Entre no diretório do projeto e instale as dependências:
 
 ```bash
-# development
-$ pnpm run start
-
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
+  npm i
 ```
 
-## Test
+3. Inicie o arquivo docker compose:
 
 ```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
+  npm docker compose up -d
 ```
 
-## Support
+4. Crie o banco usando as migrations do prisma:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+  npm prisma migrate dev
+```
 
-## Stay in touch
+5. Execute o seed para popular o banco:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```bash
+  npm prisma db seed
+```
 
-## License
+6. Inicie o servidor
 
-Nest is [MIT licensed](LICENSE).
+```bash
+  npm run start:dev
+```
+
+## 📋 Funcionalidades
+
+- O usuário poderá navegar por um catálogo de produtos com paginação;
+- O usuário poderá visualizar uma página de descrição do produto;
+- O usuário poderá filtrar os produtos por categoria;
+- O usuário poderá buscar pelo nome de um produto;
+- O usuário poderá adicionar um produto no carrinho;
+- O usuário poderá remover um produto do carrinho;
+- O usuário poderá finalizar a compra e ter o seu carrinho zerado.
+
+## 🛠️ Tecnologias usadas no back-end:
+
+- [NestJS](https://nestjs.com/) - framework Node.js para construção de aplicativos eficientes e escaláveis;
+- [Prisma](https://www.prisma.io/) - ORM para facilitar o acesso e manipulação do banco de dados MySQL
+
+##
