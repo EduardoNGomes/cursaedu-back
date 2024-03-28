@@ -20,7 +20,12 @@ export class FindAllProductsController {
   async handle(@Query() query: FindAllProductsParamsSchema) {
     const { page, name } = query
 
-    const result = await this.findAllProducts.execute({ page: page ?? 1, name })
+    const pageInvalid = page === undefined || page === 0
+
+    const result = await this.findAllProducts.execute({
+      page: pageInvalid ? 1 : page,
+      name,
+    })
 
     return result
   }

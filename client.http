@@ -10,7 +10,8 @@ Content-Type: application/json
 
 # @name get_products
 
-GET {{baseUrl}}/?name=cane
+GET {{baseUrl}}/?name
+                
 Content-Type: application/json
 
 
@@ -26,7 +27,7 @@ Content-Type: application/json
 
 # @name get_products_by_category
 
-GET {{baseUrl}}/category/tshirt?page=2
+GET {{baseUrl}}/category/tshirt
 Content-Type: application/json
 
 

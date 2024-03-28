@@ -46,6 +46,7 @@ export class PrismaProductRepository implements IProductRepository {
   async findProductsByCategory(props: {
     category: string
     page: number
+    name?: string
   }): Promise<{
     totalCount: number
     products: Product[]
@@ -54,11 +55,21 @@ export class PrismaProductRepository implements IProductRepository {
       this.prisma.product.count({
         where: {
           category: props.category as Category,
+          AND: {
+            name: {
+              contains: props.name,
+            },
+          },
         },
       }),
       this.prisma.product.findMany({
         where: {
           category: props.category as Category,
+          AND: {
+            name: {
+              contains: props.name,
+            },
+          },
         },
         take: 12,
         skip: (props.page - 1) * 12,

@@ -20,6 +20,7 @@ type FindProductsByCategoryParamsSchema = z.infer<
 >
 
 const findProductsByCategoryQuerySchema = z.object({
+  name: z.string().optional(),
   page: z.coerce.number().optional(),
 })
 
@@ -45,13 +46,14 @@ export class FindProductsByCategoryController {
   ) {
     const { category } = param
 
-    const { page } = query
+    const { page, name } = query
 
-    console.log(page)
+    const pageInvalid = page === undefined || page === 0
 
     const result = await this.findProductsByCategory.execute({
-      page: page ?? 1,
+      page: pageInvalid ? 1 : page,
       category,
+      name,
     })
 
     if (result instanceof InvalidCategoryError) {

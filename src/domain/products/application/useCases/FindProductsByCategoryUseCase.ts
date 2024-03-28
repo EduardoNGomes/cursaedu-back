@@ -6,6 +6,7 @@ import { Injectable } from '@nestjs/common'
 type FindProductByCategoryUseCaseRequest = {
   category: string
   page: number
+  name?: string
 }
 
 type FindProductByCategoryUseCaseResponse =
@@ -21,6 +22,7 @@ export class FindProductsByCategoryUseCase {
   async execute({
     category,
     page,
+    name,
   }: FindProductByCategoryUseCaseRequest): Promise<FindProductByCategoryUseCaseResponse> {
     if (
       category.toLocaleUpperCase() !== 'MUG' &&
@@ -33,6 +35,7 @@ export class FindProductsByCategoryUseCase {
       await this.productRepository.findProductsByCategory({
         category: category.toUpperCase(),
         page,
+        name,
       })
 
     return { totalCount, products }
