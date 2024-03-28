@@ -19,9 +19,10 @@ enum Category {
 }
 
 model Product {
-  id       String   @id @default(uuid())
-  name     String   @unique
-  price    Int
-  image    String
-  category Category
+  id          String   @id @default(uuid())
+  name        String   @unique
+  price       Int
+  image       String
+  description String
+  category    Category
 }
