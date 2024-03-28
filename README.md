@@ -19,7 +19,7 @@ Nesse repositório contém a implementação de um sistema de E-commerce projeta
 3. Inicie o arquivo docker compose:
 
 ```bash
-  npm docker compose up -d
+  docker compose up -d
 ```
 
 4. Crie um arquivo .env seguindo o arquivo .env copy:
@@ -27,13 +27,13 @@ Nesse repositório contém a implementação de um sistema de E-commerce projeta
 5. Crie o banco usando as migrations do prisma:
 
 ```bash
-  npm prisma migrate dev
+  npx prisma migrate dev
 ```
 
 6. Execute o seed para popular o banco:
 
 ```bash
-  npm prisma db seed
+  npx prisma db seed
 ```
 
 7. Inicie o servidor
