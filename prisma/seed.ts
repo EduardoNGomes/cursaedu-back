@@ -9,7 +9,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-01.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 40,
       },
       {
@@ -17,7 +17,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-01.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 78,
       },
       {
@@ -25,7 +25,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-06.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 32,
       },
       {
@@ -33,7 +33,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-05.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 58,
       },
       {
@@ -41,7 +41,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-04.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 89,
       },
       {
@@ -49,7 +49,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-06.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 85,
       },
       {
@@ -57,7 +57,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-03.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 69,
       },
       {
@@ -65,7 +65,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-02.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 28,
       },
       {
@@ -73,7 +73,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-05.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 43,
       },
       {
@@ -81,7 +81,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-02.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 55,
       },
       {
@@ -89,7 +89,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-03.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 32,
       },
       {
@@ -97,7 +97,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-06.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 92,
       },
 
@@ -106,7 +106,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-01.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 40,
       },
       {
@@ -114,7 +114,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-01.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 78,
       },
       {
@@ -122,7 +122,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-06.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 32,
       },
       {
@@ -130,7 +130,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-05.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 58,
       },
       {
@@ -138,7 +138,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-04.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 89,
       },
       {
@@ -146,7 +146,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-06.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 85,
       },
       {
@@ -154,7 +154,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-03.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 69,
       },
       {
@@ -162,7 +162,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-02.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 28,
       },
       {
@@ -170,7 +170,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-05.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 43,
       },
       {
@@ -178,7 +178,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-02.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 55,
       },
       {
@@ -186,7 +186,7 @@ async function main() {
         category: 'MUG',
         image: 'caneca-03.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 32,
       },
       {
@@ -194,7 +194,7 @@ async function main() {
         category: 'TSHIRT',
         image: 'camiseta-06.jpg',
         description:
-          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda, possimus ut fugiat reprehenderit provident harum labore ipsum mollitia illum ex. Quis, fugiat. Culpa rem maxime recusandae.',
+          ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis sed ducimus assumenda',
         price: 92,
       },
     ],
